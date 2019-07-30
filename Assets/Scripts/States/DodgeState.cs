@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class DodgeState : BaseState
 {
+    // DODGE state can transition to the following states
+    // IDLE - RUN 
+        // add more as we create them
+
     StateManager stateManager;
 
     public DodgeState(StateManager state) : base(state.gameObject)

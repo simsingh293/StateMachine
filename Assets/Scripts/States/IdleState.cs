@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class IdleState : BaseState
 {
+    // IDLE state can transition into the following states
+    // RUN - ATTACK - DODGE - STUNNED
+        // add more as we create them
+
+
     StateManager stateManager;
 
 

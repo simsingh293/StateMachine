@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class StunnedState : BaseState
 {
+    // STUNNED state can transition to the following states
+    // IDLE 
+        // add more as we create them
+
     StateManager stateManager;
 
     public StunnedState(StateManager state) : base(state.gameObject)

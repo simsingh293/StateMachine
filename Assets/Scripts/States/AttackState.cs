@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class AttackState : BaseState
 {
+    // ATTACK state can transition to the following states
+    // IDLE - RUN - DODGE - STUNNED
+        // add more as we create them
+
     StateManager stateManager;
 
     public AttackState(StateManager state) : base(state.gameObject)

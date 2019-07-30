@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class StateManager : MonoBehaviour
 {
-    public float speed = 5;
+    // State Manager holds all the Inputs which are then accessed
+    // by the different State classes to control the character's
+    // animations and physics(movement, root motion, etc.)
 
+    public float speed = 5;
 
     public float _vertical;
     public float _horizontal;
@@ -22,6 +25,12 @@ public class StateManager : MonoBehaviour
     public bool _Vcharge;
 
     float delta;
+
+    public enum MovementStates
+    {
+        FreeRun,
+        Combat
+    }
 
     StateMachine machine;
     Rigidbody _rb;
